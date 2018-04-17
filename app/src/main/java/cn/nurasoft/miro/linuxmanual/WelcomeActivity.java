@@ -1,19 +1,21 @@
 package cn.nurasoft.miro.linuxmanual;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.Window;
-import android.widget.ScrollView;
 
 /**
  * Created by miro on 11/02/17~.~
  **/
 
 public class WelcomeActivity extends Activity {
+
     private Handler handler  ;
+    @SuppressLint("HandlerLeak")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

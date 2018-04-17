@@ -16,10 +16,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        im1=(ImageView)findViewById(R.id.image1);
-        im2=(ImageView)findViewById(R.id.image2);
-        im3=(ImageView)findViewById(R.id.image3);
-        im4=(ImageView)findViewById(R.id.image4);
+        im1= findViewById(R.id.image1);
+        im2= findViewById(R.id.image2);
+        im3= findViewById(R.id.image3);
+        im4= findViewById(R.id.image4);
 
         im1.setOnClickListener(new View.OnClickListener() {
             @Override

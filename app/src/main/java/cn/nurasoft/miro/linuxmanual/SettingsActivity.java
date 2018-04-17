@@ -2,7 +2,7 @@ package cn.nurasoft.miro.linuxmanual;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
+
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 
 /**
@@ -27,20 +28,19 @@ public class SettingsActivity extends Activity {
     TextView Show;
     EditText co;
     LinearLayout bg;
-    private AlertDialog.Builder builder;
-    Context context;
     Calendar c = Calendar.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings);
-        about=(Button)findViewById(R.id.About);
-        linux=(Button)findViewById(R.id.linux);
-        set=(Button)findViewById(R.id.set);
-        Show=(TextView)findViewById(R.id.timeshow);
-        co=(EditText)findViewById(R.id.co);
-        bg=(LinearLayout)findViewById(R.id.bg);
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        about= findViewById(R.id.About);
+        linux= findViewById(R.id.linux);
+        set= findViewById(R.id.set);
+        Show= findViewById(R.id.timeshow);
+        co= findViewById(R.id.co);
+        bg= findViewById(R.id.bg);
+
+        SimpleDateFormat df=new SimpleDateFormat("yyyy-MM-dd", Locale.CHINESE);
         String formattedDate = df.format(c.getTime());
         Show.setText(formattedDate);
 

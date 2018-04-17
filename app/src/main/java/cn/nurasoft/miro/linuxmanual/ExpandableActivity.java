@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.ColorRes;
 import android.support.v4.content.ContextCompat;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -33,7 +32,7 @@ public class ExpandableActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.commandview);
 
-        _return=(ImageButton)findViewById(R.id._return);
+        _return=findViewById(R.id._return);
         _return.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -166,7 +165,7 @@ public class ExpandableActivity extends Activity {
 
         };
 
-        ExpandableListView expandableListView = (ExpandableListView) findViewById(R.id.province);
+        ExpandableListView expandableListView = findViewById(R.id.province);
         expandableListView.setAdapter(adapter);
 
         //设置item点击的监听器

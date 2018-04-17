@@ -1,7 +1,6 @@
 package cn.nurasoft.miro.linuxmanual;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -31,13 +30,13 @@ public class CommandingActivity extends Activity {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.commanddisc);
-        _return=(ImageButton)findViewById(R.id._return);
-        OK=(Button)findViewById(R.id.query);
-        editText=(EditText)findViewById(R.id.edit);
-        ComName=(TextView)findViewById(R.id.ComName);
-        Description =(TextView)findViewById(R.id.Description);
-        Category=(TextView)findViewById(R.id.Category);
-        Fame =(TextView)findViewById(R.id.AppearTime);
+        _return= findViewById(R.id._return);
+        OK=findViewById(R.id.query);
+        editText=findViewById(R.id.edit);
+        ComName=findViewById(R.id.ComName);
+        Description =findViewById(R.id.Description);
+        Category=findViewById(R.id.Category);
+        Fame =findViewById(R.id.AppearTime);
 
         dbhelper = new DataBaseHelperClass(CommandingActivity.this);
         db = dbhelper.getReadableDatabase();
