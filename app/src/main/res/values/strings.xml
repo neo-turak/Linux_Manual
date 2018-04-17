@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Linux Manual</string>
+    <string name="linux_image">linux image</string>
+    <string name="general">General</string>
+    <string name="bonus">Bonus</string>
+    <string name="query">Query</string>
+    <string name="command">Command:</string>
+    <string name="description">Description</string>
+    <string name="key">KEY:</string>
+    <string name="line">line</string>
+    <string name="return_button">return button</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="command_name">Command Name:</string>
+    <string name="category">Category:</string>
+    <string name="description1">Description:</string>
+    <string name="first_appear_time">First appear time:</string>
+    <string name="copy_right">Copyrights:All rights reserved!</string>
+</resources>
