@@ -1,2 +1,4 @@
 # Linux_Manual
-an android application can be search Linux command
+an android application for searching Linux basic commands.
+also,has some specification, how to us...etc.
+
