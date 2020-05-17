@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Linux_Manual.iml" filepath="$PROJECT_DIR$/Linux_Manual.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/Linux_Manual-app.iml" filepath="$PROJECT_DIR$/app/Linux_Manual-app.iml" group="Linux_Manual/app" />
+      <module fileurl="file://$PROJECT_DIR$/StudioProjects-Linux_Manual.iml" filepath="$PROJECT_DIR$/StudioProjects-Linux_Manual.iml" group="Linux_Manual" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" />
     </modules>
   </component>
